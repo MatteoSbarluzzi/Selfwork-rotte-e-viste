@@ -1,0 +1,85 @@
+body {
+  background: url('https://picsum.photos/1920/1080') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;  
+  margin: 0; 
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header .row {
+  height: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+
+.box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3rem;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  font-size: 3.5rem;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section.container {
+  text-align: center;
+}
+
+.row.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-4.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-4 > div {
+  text-align: center;
+}
